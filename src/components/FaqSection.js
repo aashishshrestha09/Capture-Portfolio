@@ -1,42 +1,52 @@
+import React, {useState} from "react";
 import styled from 'styled-components'
 import {About} from '../styles'
+import Toogle from './Toogle'
 
 const FaqSection = () => {
     return(
         <Faq>
             <h2>Any Questions <span>FAQ</span></h2>
-            <div className="question">
-                <h4>How Do I Start?</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, enim.</p>
+            <Toogle>
+                <div className="question">
+                    <h4>How Do I Start?</h4>
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, enim.</p>
+                    </div>
+                    <div className="faq-line"></div>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>Dailt Schedule</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, enim.</p>
+            </Toogle>
+            <Toogle>
+                <div className="question">
+                    <h4>Dailt Schedule</h4>
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, enim.</p>
+                    </div>
+                    <div className="faq-line"></div>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>Different Payment Methods</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, enim.</p>
+            </Toogle>
+            <Toogle>
+                <div className="question">
+                    <h4>Different Payment Methods</h4>
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, enim.</p>
+                    </div>
+                    <div className="faq-line"></div>
                 </div>
-                <div className="faq-line"></div>
-            </div>
-            <div className="question">
-                <h4>What Products do You Offer?</h4>
-                <div className="answer">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, enim.</p>
+            </Toogle>
+            <Toogle>
+                <div className="question">
+                    <h4>What Products do You Offer?</h4>
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, enim.</p>
+                    </div>
+                    <div className="faq-line"></div>
                 </div>
-                <div className="faq-line"></div>
-            </div>
+            </Toogle>
         </Faq>
     )
 }
