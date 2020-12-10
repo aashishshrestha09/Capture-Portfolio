@@ -1,10 +1,13 @@
 import React, {useState} from 'react'
+import {motion} from 'framer-motion'
 
-export default function Toogle({children}) {
+export default function Toogle({children, title}) {
     const [toogle, setToogle] = useState(true);
     return (
-        <div onClick={() => setToogle(!toogle)}>
+        <motion.div layout className="question" onClick={() => setToogle(!toogle)}>
+            <motion.h4 layout>{title}</motion.h4>
             {toogle ? children : ""}
-        </div>
+            <div className="faq-line"></div>
+        </motion.div>
     )
 }

@@ -2,51 +2,38 @@ import React, {useState} from "react";
 import styled from 'styled-components'
 import {About} from '../styles'
 import Toogle from './Toogle'
+import{AnimateSharedLayout} from 'framer-motion'
 
 const FaqSection = () => {
     return(
         <Faq>
             <h2>Any Questions <span>FAQ</span></h2>
-            <Toogle>
-                <div className="question">
-                    <h4>How Do I Start?</h4>
+            <AnimateSharedLayout>
+                <Toogle title="How Do I Start?">
                     <div className="answer">
                         <p>Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, enim.</p>
                     </div>
-                    <div className="faq-line"></div>
-                </div>
-            </Toogle>
-            <Toogle>
-                <div className="question">
-                    <h4>Dailt Schedule</h4>
+                </Toogle>
+                <Toogle title="Daily Schedule">
+                    <div className="answer">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, enim.</p>
+                    </div>    
+                </Toogle>
+                <Toogle title="Different Payment Methods">
                     <div className="answer">
                         <p>Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, enim.</p>
                     </div>
-                    <div className="faq-line"></div>
-                </div>
-            </Toogle>
-            <Toogle>
-                <div className="question">
-                    <h4>Different Payment Methods</h4>
+                </Toogle>
+                <Toogle title="What Products do You Offer?">
                     <div className="answer">
                         <p>Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, enim.</p>
                     </div>
-                    <div className="faq-line"></div>
-                </div>
-            </Toogle>
-            <Toogle>
-                <div className="question">
-                    <h4>What Products do You Offer?</h4>
-                    <div className="answer">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, enim.</p>
-                    </div>
-                    <div className="faq-line"></div>
-                </div>
-            </Toogle>
+                </Toogle>
+            </AnimateSharedLayout>
         </Faq>
     )
 }
