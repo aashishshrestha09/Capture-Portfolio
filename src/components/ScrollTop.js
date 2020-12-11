@@ -10,7 +10,6 @@ const ScrollTop = () => {
         })
     }, [pathname])
 
-
     return null;
 }
 
